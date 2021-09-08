@@ -1,0 +1,228 @@
+@import url("https://ui-component-lib.netlify.app/style.css");
+
+.App {
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.App > button {
+  background-color: gray;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+}
+
+form > button {
+  background-color: gray;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+}
+
+img {
+  width: 50%;
+  height: auto;
+}
+
+.CartList { /*add this class to vcartlist ul*/
+  padding: 0px;
+  list-style-type: none;
+  display: inline-block;
+  margin: 0px;
+}
+
+.CartList .NavLink span{
+  color:orange;
+  font-weight:bolder;
+  border:2px solid gray;
+  padding:10px;
+  background-color:#41464b;
+  border-radius:5px;
+  font-size:2.5rem
+}
+
+.CartList li {
+  list-style-type: none;
+  height: auto;
+  display: inline-block;
+}
+
+.CartList li > button {
+  background-color: gray;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 5px;
+  border: 2px solid gray;
+}
+
+.ProductList { /*add this class to vcartlist ul*/
+  padding: 0px;
+  list-style-type: none;
+  display: inline-block;
+  margin: 0px;
+}
+
+.ProductList li {
+  list-style-type: none;
+  width: 20rem;
+  height: auto;
+  display: inline-block;
+  border: 2px solid gray;
+  padding: 0 0 2rem 0;
+  margin: 10px;
+}
+
+.ProductList li img{
+  width: 100%;
+  height: 13rem;
+}
+
+.ProductList li > button {
+  background-color: gray;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 5px;
+  border: 2px solid #41464b;
+}
+
+/* fontSize:"2rem",position:"absolute",color:wishlistCardColor,margin:"1rem 12rem",background:"center" */
+.ProductList li .icon-bttn{
+  font-size:x-large;
+  background:center;
+  position:absolute;
+  margin:1rem 16.8rem;
+  border: none;
+}
+
+.ProductList li img .cartAndwishList-icon{
+  position: absolute;
+  top: 1rem;
+  left: 18rem;
+  width: 2rem;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.horizontal{
+  display: flex;
+    flex-direction: row;
+    max-width: 25rem;
+    /* height: 5rem; */
+    /* width: 100%; */
+    /* height: 15rem; */
+    height:auto;
+}
+
+.navigation {
+  background-color: var(--alert-secondary-font-color);
+  color: var(--nav-color);
+  padding: 0.50rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.nav-bttn {
+  margin: 0px 15px;
+  padding: 5px;
+  background-color: gray;
+  color: white;
+}
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  /* transition: cubic-bezier(0.42, 0.71, 0, 1.22) 5s; */
+  transition: cubic-bezier(1, 0.67, 0, 0.35) 2.5s;
+  text-align: right;
+}
+
+/* .active, .accordion:hover {
+  background-color: #ccc; 
+} */
+
+.panel {
+  padding: 10px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+  /* transition: cubic-bezier(0.42, 0.71, 0, 1.22) 5s; */
+  transition: cubic-bezier(1, 0.67, 0, 0.35) 2.5s;
+}
+.snackbar {
+  display: flex;
+  height: 1rem;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background-color: gray;
+  font-weight: bold;
+  color: orange;
+  border-radius: 8px;
+  font-size: x-large;
+  z-index: 1;
+}
+
+.snackbar--messege {
+  letter-spacing: 0.2rem;
+}
+
+.snackbar--button {
+  background-color: gray;
+  color: orange;
+  border: none;
+  cursor: pointer;
+}
+
+.card-body .card-text p{
+  margin: 10px;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
